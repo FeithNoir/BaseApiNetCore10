@@ -1,0 +1,17 @@
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Business.deps.json
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Business.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Business.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.GeneratedMSBuildEditorConfig.editorconfig
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.AssemblyInfoInputs.cache
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.AssemblyInfo.cs
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.csproj.CoreCompileInputs.cache
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\refint\BaseApiNet10.Business.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\ref\BaseApiNet10.Business.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Core.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Data.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Core.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\bin\Debug\net10.0\BaseApiNet10.Data.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiNet10.Business.csproj.AssemblyReference.cache
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Business\obj\Debug\net10.0\BaseApiN.9F568863.Up2Date

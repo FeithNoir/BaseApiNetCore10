@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="BaseApiNet10.Api/BaseApiNet10.Api.csproj" />
+  <Project Path="BaseApiNet10.Business/BaseApiNet10.Business.csproj" />
+  <Project Path="BaseApiNet10.Core/BaseApiNet10.Core.csproj" />
+  <Project Path="BaseApiNet10.Data/BaseApiNet10.Data.csproj" />
+</Solution>

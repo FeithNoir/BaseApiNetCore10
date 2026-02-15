@@ -1,0 +1,12 @@
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\bin\Debug\net10.0\BaseApiNet10.Core.deps.json
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\bin\Debug\net10.0\BaseApiNet10.Core.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\bin\Debug\net10.0\BaseApiNet10.Core.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.GeneratedMSBuildEditorConfig.editorconfig
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.AssemblyInfoInputs.cache
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.AssemblyInfo.cs
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.csproj.CoreCompileInputs.cache
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\refint\BaseApiNet10.Core.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.pdb
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\ref\BaseApiNet10.Core.dll
+I:\Recursos\NetCore\BaseApiNet10\BaseApiNet10.Core\obj\Debug\net10.0\BaseApiNet10.Core.csproj.AssemblyReference.cache

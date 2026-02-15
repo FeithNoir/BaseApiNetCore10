@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "BaseApiNet10.Core/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.UI": "10.0.2"
+        },
+        "runtime": {
+          "BaseApiNet10.Core.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Identity.UI/10.0.2": {
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Identity.UI.dll": {
+            "assemblyVersion": "10.0.2.0",
+            "fileVersion": "10.0.225.61305"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BaseApiNet10.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.Identity.UI/10.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-DXskKfO8Y5XQw0PV+PJFc38mU99yC//+MIFazEL2eUqEgyRl1m3rGR9+TPOoxoMERpr9KuRGiQXmwb9Vg1EE7w==",
+      "path": "microsoft.aspnetcore.identity.ui/10.0.2",
+      "hashPath": "microsoft.aspnetcore.identity.ui.10.0.2.nupkg.sha512"
+    }
+  }
+}

@@ -1,6 +1,0 @@
-@BaseApiNet10.Api_HostAddress = http://localhost:5293
-
-GET {{BaseApiNet10.Api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

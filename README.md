@@ -1,75 +1,47 @@
-# BaseApiNet10
+# BaseApiNetCore10
 
-This project is a base API for role-based authentication, built with .NET 10. It serves as a foundational template for creating other APIs, providing a robust and secure starting point for authentication and authorization functionalities.
+API base de autenticación en **.NET 10**, alineada con la serie [Crear base API](https://devchronicle-hugo.web.app/post/crear-base-api-dotnet) de DevChronicle.
 
-## Features
+Tiene capas DDD (Domain, Application, Infrastructure, Api), inyección de dependencias, JWT con refresh rotativo, hash de contraseñas, correos (bienvenida/verificación, restablecer, notificaciones) y los endpoints de auth del contrato común.
 
-*   **Role-Based Authentication:** Secure your API endpoints based on user roles.
-*   **JWT (JSON Web Token) Support:** Implement token-based authentication for stateless API security.
-*   **Email Services:** Integrated email functionality for features like password reset and email confirmation.
-*   **User Management:** Basic user registration and management.
-*   **Clean Architecture:** Structured for maintainability and scalability.
+> **Salto de versión (26 nov 2026).** Esta no es la plantilla de febrero de 2026 (Identity, roles, SQLite). Esa quedó en la rama [`legacy/2026-02-plantilla-identity-sqlite`](https://github.com/FeithNoir/BaseApiNetCore10/tree/legacy/2026-02-plantilla-identity-sqlite). El detalle está en [CHANGELOG.md](CHANGELOG.md).
 
-## Getting Started
+## Requisitos
 
-### Prerequisites
+- SDK de .NET 10 (se probó con 10.0.404)
+- Docker, curl y jq
+- Postgres y Mailpit, que levanta el `docker-compose.yml`
 
-*   .NET 10 SDK
-*   A database (SQLite is used by default in this template)
+## Cómo correrla
 
-### Configuration
+```bash
+git clone https://github.com/FeithNoir/BaseApiNetCore10.git
+cd BaseApiNetCore10
+docker compose up -d
+cp .env.example .env   # cambia JWT_SECRET por uno de al menos 32 caracteres
+dotnet tool restore    # instala dotnet-ef 10.0.15
+dotnet test
+dotnet run --project src/BaseApi.Api
+```
 
-Sensitive information like JWT secrets and SMTP settings are managed using .NET User Secrets for development.
+Por defecto escucha en `http://localhost:8080` (variable `PORT`). Swagger UI queda en `/docs`. El recorrido de contrato:
 
-1.  Navigate to the `BaseApiNet10.Api` directory.
-2.  Set your user secrets using the `dotnet user-secrets` command:
+```bash
+./e2e.sh http://localhost:8080
+```
 
-    ```bash
-    dotnet user-secrets set "JwtConfig:Secret" "YOUR_JWT_SECRET_KEY"
-    dotnet user-secrets set "SmtpSettings:Server" "YOUR_SMTP_SERVER"
-    dotnet user-secrets set "SmtpSettings:Port" "YOUR_SMTP_PORT"
-    dotnet user-secrets set "SmtpSettings:SenderName" "YOUR_SENDER_NAME"
-    dotnet user-secrets set "SmtpSettings:SenderEmail" "YOUR_SENDER_EMAIL"
-    dotnet user-secrets set "SmtpSettings:UserName" "YOUR_SMTP_USERNAME"
-    dotnet user-secrets set "SmtpSettings:Password" "YOUR_SMTP_PASSWORD"
-    ```
+## Estructura
 
-    **Note:** Replace the placeholder values with your actual secret keys and credentials.
+```
+src/BaseApi.Domain          # entidades, value objects y puertos
+src/BaseApi.Application     # casos de uso y DTOs
+src/BaseApi.Infrastructure  # EF Core, JWT, MailKit, plantillas
+src/BaseApi.Api             # HTTP, Problem Details, OpenAPI
+tests/BaseApi.Tests
+```
 
-### Running the Application
+La configuración sale de las variables de `.env.example`: `DATABASE_URL`, `JWT_SECRET`, `SMTP_*`, `APP_URL`, etc.
 
-1.  Navigate to the `BaseApiNet10.Api` directory.
-2.  Run the application:
+## Tutorial
 
-    ```bash
-    dotnet run
-    ```
-
-    The API will be accessible at the configured address (e.g., `https://localhost:5001`).
-
-### Database Migrations
-
-To apply database migrations:
-
-1.  Navigate to the `BaseApiNet10.Api` directory.
-2.  Run the following commands:
-
-    ```bash
-    dotnet ef database update --project ../BaseApiNet10.Data/BaseApiNet10.Data.csproj
-    ```
-
-## Project Structure
-
-*   **BaseApiNet10.Api:** The main API project, containing controllers and startup configuration.
-*   **BaseApiNet10.Business:** Business logic, services, and interfaces.
-*   **BaseApiNet10.Core:** Core entities, DTOs, and common extensions.
-*   **BaseApiNet10.Data:** Data access layer, including DbContext and migrations.
-
-## Technologies Used
-
-*   .NET 10
-*   ASP.NET Core
-*   Entity Framework Core
-*   JWT Authentication
-*   Swagger/OpenAPI
-*   MailKit (for email services)
+El paso a paso, las trampas y el reto de bloqueo de cuenta están en el artículo de DevChronicle: [Crear base API: .NET 10 con EF Core, FluentValidation y MailKit](https://devchronicle-hugo.web.app/post/crear-base-api-dotnet).
